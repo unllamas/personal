@@ -7,7 +7,7 @@ export default class Document extends NextDocument {
       '@context': 'https://schema.org/',
       '@type': 'Person',
       name: 'Jonathan',
-      url: '',
+      url: 'https://jonallamas.com/',
       image: '',
       sameAs: [
         'https://twitter.com/unllamas',
@@ -35,22 +35,28 @@ export default class Document extends NextDocument {
           {/* Metadata */}
           <meta
             name='description'
-            content='Aceptar cripto-activos nunca fue tan facil. Recibe pagos internacionales en tan solo 30 segundos.'
+            content='Con un variado backgrund en diferentes áreas en tecnología, hoy me encuentro desarrollando e investigando sobre software localfirst.'
           />
           <meta name='robots' content='index,follow' />
 
-          <meta property='og:title' content='Sallet - Wallet non custodial' />
-          <meta property='og:description' content='Recibe pagos internacionales en tan solo 30 segundos.' />
+          <meta property='og:title' content='Front-end Web3 Developer - Jonathan Llamas' />
+          <meta
+            property='og:description'
+            content='UI Developer Argentino residiendo por el mundo enfocado a desarrollo/producto.'
+          />
           <meta property='og:locale' content='es_ES' />
           <meta property='og:type' content='website' />
           <meta property='og:image' content='/img/social/facebook-1200x630.jpg' />
-          <meta property='og:url' content='https://sallet.app' />
+          <meta property='og:url' content='https://jonallamas.com/' />
 
-          <meta name='twitter:title' content='Sallet - Wallet non custodial' />
-          <meta name='twitter:description' content='Recibe pagos internacionales en tan solo 30 segundos.' />
+          <meta name='twitter:title' content='Front-end Web3 Developer - Jonathan Llamas' />
+          <meta
+            name='twitter:description'
+            content='UI Developer Argentino residiendo por el mundo enfocado a desarrollo/producto.'
+          />
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:image' content='/img/social/twitter-600x330.jpg' />
-          <meta name='twitter:url' content='https://sallet.app' />
+          <meta name='twitter:url' content='https://jonallamas.com/' />
 
           {/* Schema */}
           <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
