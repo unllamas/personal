@@ -8,7 +8,7 @@ export default class Document extends NextDocument {
       '@type': 'Person',
       name: 'Jonathan',
       url: 'https://jonallamas.com/',
-      image: '',
+      image: 'https://www.jonallamas.com/favicon.png',
       sameAs: [
         'https://twitter.com/unllamas',
         'https://www.linkedin.com/in/unllamas/',
@@ -22,7 +22,7 @@ export default class Document extends NextDocument {
     };
 
     return (
-      <Html>
+      <Html lang='es'>
         <Head>
           {/* Favicon */}
           <link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
