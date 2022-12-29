@@ -22,7 +22,7 @@ export default function ArticlePreview({ article }) {
           borderRadius='12px'
           overflow='hidden'
         />
-        <HStack px='10px' w='100%' gap='20px'>
+        <HStack alignItems='flex-start' px='10px' w='100%' gap='20px'>
           <Heading as='h3' fontSize='22px' _groupHover={{ textDecoration: 'underline' }}>
             <Link href={url?.href} target={url?.target}>
               {title}
