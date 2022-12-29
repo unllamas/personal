@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import {
   Link as ChakraLink,
@@ -97,6 +98,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Front-end Web3 Developer - Jonathan Llamas</title>
+      </Head>
       <Navbar />
 
       <Hero />
