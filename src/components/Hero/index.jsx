@@ -8,6 +8,7 @@ import Linkedin from '../Icons/Linkedin';
 import Twitter from '../Icons/Twitter';
 import Github from '../Icons/Github';
 import Coffee from '../Icons/Coffee';
+import DrinkACoffee from '../Icons/DrinkACoffee';
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
             <Heading as='h3' fontSize='18px'>
               Conectamos?
             </Heading>
-            <HStack mt='10px'>
+            <HStack position='relative' display='inline-flex' mt='10px'>
               <LinkButton href='/'>
                 <Linkedin />
               </LinkButton>
@@ -39,6 +40,9 @@ export default function Hero() {
               <LinkButton href='/'>
                 <Coffee />
               </LinkButton>
+              <Box position='absolute' left='100%' top='0'>
+                <DrinkACoffee />
+              </Box>
             </HStack>
           </Box>
         </Box>
