@@ -22,37 +22,15 @@ export default function ProjectPreview({ project }) {
           transform: 'translateY(-10px)',
         }}
       >
-        <HStack justifyContent='space-between' alignItems='flex-start' gap='20px' py='20px'>
-          <VStack gap='10px'>
-            <Box tabIndex={0}>
-              <Heading as='h3' fontSize='22px'>
-                {title}
-              </Heading>
-              <Text fontSize='16px' opacity='.65'>
-                {description}
-              </Text>
-            </Box>
-            <List
-              opacity={{ base: 1, md: 0 }}
-              display='flex'
-              gap='4px'
-              transitionDuration='.4s'
-              _groupHover={{ opacity: 1 }}
-            >
-              {tags?.map((tag, key) => (
-                <ListItem
-                  key={key}
-                  p='2px 8px'
-                  bg='rgba(51,51,51,.65)'
-                  borderRadius='12px'
-                  color='#f1f1f1'
-                  whiteSpace='nowrap'
-                >
-                  {tag}
-                </ListItem>
-              ))}
-            </List>
-          </VStack>
+        <HStack position='relative' justifyContent='space-between' alignItems='flex-start' gap='20px' py='20px'>
+          <Box tabIndex={0}>
+            <Heading as='h3' fontSize='22px'>
+              {title}
+            </Heading>
+            <Text fontSize='16px' opacity='.65'>
+              {description}
+            </Text>
+          </Box>
           <LinkOverlay
             href={url?.href}
             target={url?.target}
@@ -71,6 +49,31 @@ export default function ProjectPreview({ project }) {
           >
             <Arrow />
           </LinkOverlay>
+          <Box position='absolute' top='100%' left='0' ml='0 !important' mt='-10px !important' w='100%'>
+            <List
+              opacity={{ base: 1, md: 0 }}
+              display='flex'
+              gap='4px'
+              m='0'
+              transitionDuration='.4s'
+              _groupHover={{ opacity: 1 }}
+            >
+              {tags?.map((tag, key) => (
+                <ListItem
+                  key={key}
+                  p='2px 8px'
+                  bg='rgba(51,51,51,.65)'
+                  backdropFilter='auto'
+                  backdropBlur='10px'
+                  borderRadius='12px'
+                  color='#f1f1f1'
+                  whiteSpace='nowrap'
+                >
+                  {tag}
+                </ListItem>
+              ))}
+            </List>
+          </Box>
         </HStack>
         <Box
           w='100%'
