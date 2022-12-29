@@ -39,6 +39,10 @@ export default class Document extends NextDocument {
           />
           <meta name='robots' content='index,follow' />
 
+          {/* Google */}
+          <meta name='google-site-verification' content='eHCSW-lYqeJailH13PfCaGgBt4WKXWPW0MaDelwvRJk' />
+
+          {/* Facebook */}
           <meta property='og:title' content='Front-end Web3 Developer - Jonathan Llamas' />
           <meta property='og:description' content='UI Developer enfocado a desarrollo/producto.' />
           <meta property='og:locale' content='es_ES' />
@@ -46,6 +50,7 @@ export default class Document extends NextDocument {
           <meta property='og:image' content='/social/facebook-1200x630.jpg' />
           <meta property='og:url' content='https://jonallamas.com/' />
 
+          {/* Twitter */}
           <meta name='twitter:title' content='Front-end Web3 Developer - Jonathan Llamas' />
           <meta name='twitter:description' content='UI Developer enfocado a desarrollo/producto.' />
           <meta name='twitter:card' content='summary_large_image' />

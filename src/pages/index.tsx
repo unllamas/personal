@@ -43,8 +43,8 @@ export default function Home() {
         <Container>
           <Title as='h2' text='Proyectos' subtitle='Projects' />
           <SimpleGrid columns={{ base: 1, md: 2 }} gap='20px' mt='40px'>
-            {projects.map((project) => (
-              <ProjectPreview project={project} key={project.id} />
+            {projects?.map((project) => (
+              <ProjectPreview project={project} key={project?.id} />
             ))}
           </SimpleGrid>
         </Container>
@@ -55,8 +55,8 @@ export default function Home() {
         <Container>
           <Title as='h2' text='Artículos' subtitle='Articles' />
           <SimpleGrid columns={{ base: 1, md: 2 }} gap='20px' mt='40px'>
-            {articles.map((article) => (
-              <ArticlePreview article={article} key={article.id} />
+            {articles?.map((article) => (
+              <ArticlePreview article={article} key={article?.id} />
             ))}
           </SimpleGrid>
         </Container>
