@@ -27,7 +27,14 @@ export default function ProjectPreview({ project }) {
             </Text>
             <List display='flex' mt='10px' gap='4px' opacity={{ base: 1, md: 0 }} _groupHover={{ opacity: 1 }}>
               {tags?.map((tag, key) => (
-                <ListItem key={key} p='2px 8px' borderRadius='12px' bg='rgba(51,51,51,.65)' color='#f1f1f1'>
+                <ListItem
+                  key={key}
+                  p='2px 8px'
+                  whiteSpace='nowrap'
+                  borderRadius='12px'
+                  bg='rgba(51,51,51,.65)'
+                  color='#f1f1f1'
+                >
                   {tag}
                 </ListItem>
               ))}
