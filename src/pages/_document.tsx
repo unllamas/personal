@@ -46,7 +46,7 @@ export default class Document extends NextDocument {
           />
           <meta property='og:locale' content='es_ES' />
           <meta property='og:type' content='website' />
-          <meta property='og:image' content='/img/social/facebook-1200x630.jpg' />
+          <meta property='og:image' content='/social/facebook-1200x630.jpg' />
           <meta property='og:url' content='https://jonallamas.com/' />
 
           <meta name='twitter:title' content='Front-end Web3 Developer - Jonathan Llamas' />
@@ -55,7 +55,7 @@ export default class Document extends NextDocument {
             content='UI Developer Argentino residiendo por el mundo enfocado a desarrollo/producto.'
           />
           <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:image' content='/img/social/twitter-600x330.jpg' />
+          <meta name='twitter:image' content='/social/twitter-600x330.jpg' />
           <meta name='twitter:url' content='https://jonallamas.com/' />
 
           {/* Schema */}
