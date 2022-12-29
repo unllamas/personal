@@ -30,7 +30,7 @@ export default function ArticlePreview({ article }) {
               borderRadius='12px'
               border='1px solid #eee'
               bg='#fff'
-              display='none'
+              display={{ base: 'flex', md: 'none' }}
               justifyContent='center'
               alignItems='center'
               _groupHover={{ display: 'flex' }}
