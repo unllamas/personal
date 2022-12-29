@@ -41,7 +41,8 @@ export default function ProjectPreview({ project }) {
             </List>
           </Box>
           <LinkOverlay
-            href={url}
+            href={url?.href}
+            target={url?.target}
             minH='50px'
             minW='50px'
             borderRadius='12px'

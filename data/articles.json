@@ -1,18 +1,24 @@
 [
   {
     "id": 1,
-    "title": "Web 3.0: la guía completa para entender cómo funciona",
-    "url": "#",
+    "title": "Bitcoin, accesibilidad e inclusión",
+    "url": {
+      "target": "_blank",
+      "href": "https://aerolab.us/blog/bitcoin-accesibilidad-inclusion"
+    },
     "image": {
-      "url": "web3.png"
+      "url": "bitcoin.png"
     }
   },
   {
     "id": 2,
-    "title": "Bitcoin, accesibilidad e inclusión",
-    "url": "#",
+    "title": "Web 3.0: la guía completa para entender cómo funciona",
+    "url": {
+      "target": "_blank",
+      "href": "https://aerolab.us/blog/web3.0-guia-para-entender-como-funciona"
+    },
     "image": {
-      "url": "bitcoin.png"
+      "url": "web3.png"
     }
   }
 ]

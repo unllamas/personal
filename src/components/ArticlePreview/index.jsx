@@ -24,7 +24,8 @@ export default function ArticlePreview({ article }) {
         >
           <Box position='absolute' right='20px' top='20px'>
             <LinkOverlay
-              href={url}
+              href={url?.href}
+              target={url?.target}
               h='50px'
               w='50px'
               borderRadius='12px'

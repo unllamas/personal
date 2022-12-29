@@ -9,7 +9,10 @@
       "EthersJS"
     ],
     "background": "#9FDBA5",
-    "url": "#",
+    "url": {
+      "target": "_blank",
+      "href": "http://sallet.app/"
+    },
     "image": {
       "url": "sallet.png",
       "size": "cover"
@@ -24,7 +27,10 @@
       "IPFS"
     ],
     "background": "#fff",
-    "url": "#",
+    "url": {
+      "target": "_blank",
+      "href": "https://simple-image-upload-ipfs.vercel.app/"
+    },
     "image": {
       "url": "upload.png",
       "size": "cover"
@@ -40,7 +46,10 @@
       "GSAP"
     ],
     "background": "#fff",
-    "url": "#",
+    "url": {
+      "target": "_blank",
+      "href": "https://mozzotattoo.com/"
+    },
     "image": {
       "url": "mozzo.png",
       "size": "contain"
@@ -56,7 +65,10 @@
       "Template custom"
     ],
     "background": "#fff",
-    "url": "#",
+    "url": {
+      "target": "_blank",
+      "href": "https://mfaarq.es/"
+    },
     "image": {
       "url": "mariano.png",
       "size": "cover"
