@@ -5,7 +5,7 @@ export default function LinkButton(props) {
   const { children } = props;
 
   return (
-    <Link {...props}>
+    <Link {...props} passHref>
       <Flex
         h='50px'
         w='50px'
