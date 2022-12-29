@@ -39,7 +39,7 @@ export default function ArticlePreview({ article }) {
             </LinkOverlay>
           </Box>
         </Box>
-        <Box px='10px'>
+        <Box px='10px' w='100%'>
           <Heading as='h3' fontSize='22px'>
             <Link href={url}>{title}</Link>
           </Heading>
