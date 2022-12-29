@@ -18,7 +18,7 @@ export default function Hero() {
           <VStack gap='10px'>
             <Title as='h1' text='Hola, soy Jonathan Llamas. Front-end Web3 Developer' subtitle='About' />
             <Text opacity='.65' fontSize='18px'>
-              Con un variado backgrund en diferentes áreas en tecnología, hoy me encuentro{' '}
+              Con un variado background en diferentes áreas en tecnología, hoy me encuentro{' '}
               <strong>desarrollando e investigando sobre software localfirst</strong>.
             </Text>
           </VStack>
