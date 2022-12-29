@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Web 3.0: la guía completa para entender cómo funciona",
+    "url": "#",
+    "image": {
+      "url": "web3.png"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Bitcoin, accesibilidad e inclusión",
+    "url": "#",
+    "image": {
+      "url": "bitcoin.png"
+    }
+  }
+]

@@ -25,77 +25,10 @@ import Title from '../components/Title';
 import ProjectPreview from '../components/ProjectPreview';
 import ArticlePreview from '../components/ArticlePreview';
 
+import projects from '../../data/projects.json';
+import articles from '../../data/articles.json';
+
 export default function Home() {
-  const projects = [
-    {
-      id: 1,
-      title: 'Sallet.app',
-      description: 'Wallet non-custodial para ETH',
-      tags: ['NextJS', 'ChakraUI', 'EthersJS'],
-      background: '#9FDBA5',
-      url: '#',
-      image: {
-        url: 'sallet.png',
-        size: 'cover',
-      },
-    },
-    {
-      id: 2,
-      title: 'Upload image',
-      description: 'dApp para subir y compartir imagenes',
-      tags: ['NextJS', 'IPFS'],
-      background: '#fff',
-      url: '#',
-      image: {
-        url: 'upload.png',
-        size: 'cover',
-      },
-    },
-    {
-      id: 3,
-      title: 'MozzoTattoo',
-      description: 'Sitio web para artista del tatuaje',
-      tags: ['UI', 'ParcelJS', 'GSAP'],
-      background: '#fff',
-      url: '#',
-      image: {
-        url: 'mozzo.png',
-        size: 'contain',
-      },
-    },
-    {
-      id: 4,
-      title: 'Mariano Flores',
-      description: 'Sitio web para estudio de arquitectura',
-      tags: ['UI', 'Wordpress', 'Template custom'],
-      background: '#fff',
-      url: '#',
-      image: {
-        url: 'mariano.png',
-        size: 'cover',
-      },
-    },
-  ];
-
-  const articles = [
-    {
-      id: 1,
-      title: 'Web 3.0: la guía completa para entender cómo funciona',
-      url: '#',
-      image: {
-        url: 'web3.png',
-      },
-    },
-    {
-      id: 2,
-      title: 'Bitcoin, accesibilidad e inclusión',
-      url: '#',
-      image: {
-        url: 'bitcoin.png',
-      },
-    },
-  ];
-
   return (
     <>
       <Head>
