@@ -28,16 +28,16 @@ export default function Hero() {
               Conectamos?
             </Heading>
             <HStack position='relative' display='inline-flex' mt='10px'>
-              <LinkButton href='/'>
+              <LinkButton href='https://www.linkedin.com/in/unllamas/' target='_blank'>
                 <Linkedin />
               </LinkButton>
-              <LinkButton href='/'>
+              <LinkButton href='https://twitter.com/unllamas' target='_blank'>
                 <Twitter />
               </LinkButton>
-              <LinkButton href='/'>
+              <LinkButton href='https://github.com/jonallamas' target='_blank'>
                 <Github />
               </LinkButton>
-              <LinkButton href='/'>
+              <LinkButton href='https://calendly.com/unllamas' target='_blank'>
                 <Coffee />
               </LinkButton>
               <Box position='absolute' left='100%' top='0'>
