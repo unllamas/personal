@@ -42,7 +42,9 @@ export default function ArticlePreview({ article }) {
         </Box>
         <Box px='10px' w='100%'>
           <Heading as='h3' fontSize='22px'>
-            <Link href={url}>{title}</Link>
+            <Link href={url?.href} target={url?.target}>
+              {title}
+            </Link>
           </Heading>
         </Box>
       </VStack>
