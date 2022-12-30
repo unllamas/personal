@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import Script from 'next/script';
 import { ChakraProvider } from '@chakra-ui/react';
+import { hotjar } from 'react-hotjar';
 
 import theme from '../theme';
 import { AppProps } from 'next/app';
@@ -7,6 +9,11 @@ import { AppProps } from 'next/app';
 import * as gtag from '../lib/gtag';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  // Init Hotjar
+  useEffect(() => {
+    hotjar.initialize(3305075, 6);
+  });
+
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
