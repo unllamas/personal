@@ -17,7 +17,7 @@ export default function ProjectPreview({ project }) {
         borderRadius='12px'
         transitionDuration='.4s'
         _groupHover={{
-          boxShadow: '0 20px 40px rgba(45, 45, 45, .35)',
+          boxShadow: '0 20px 40px rgba(45, 45, 45, .15)',
           zIndex: 2,
           transform: 'translateY(-10px)',
         }}
