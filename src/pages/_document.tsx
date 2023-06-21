@@ -14,7 +14,7 @@ export default class Document extends NextDocument {
         'https://www.linkedin.com/in/unllamas/',
         'https://github.com/jonallamas',
       ],
-      jobTitle: 'Front-end web3 developer',
+      jobTitle: 'UX Engineer',
       worksFor: {
         '@type': 'Organization',
         name: 'Freelance',
@@ -43,7 +43,7 @@ export default class Document extends NextDocument {
           <meta name='google-site-verification' content='eHCSW-lYqeJailH13PfCaGgBt4WKXWPW0MaDelwvRJk' />
 
           {/* Facebook */}
-          <meta property='og:title' content='Front-end Web3 Developer - Jonathan Llamas' />
+          <meta property='og:title' content='Jonathan Llamas' />
           <meta property='og:description' content='UI Developer enfocado a desarrollo/producto.' />
           <meta property='og:locale' content='es_ES' />
           <meta property='og:type' content='website' />
@@ -51,7 +51,7 @@ export default class Document extends NextDocument {
           <meta property='og:url' content='https://jonallamas.com/' />
 
           {/* Twitter */}
-          <meta name='twitter:title' content='Front-end Web3 Developer - Jonathan Llamas' />
+          <meta name='twitter:title' content='Jonathan Llamas' />
           <meta name='twitter:description' content='UI Developer enfocado a desarrollo/producto.' />
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:image' content='/social/twitter-600x330.jpg' />

@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Front-end Web3 Developer - Jonathan Llamas</title>
+        <title>Jonathan Llamas</title>
       </Head>
       <Navbar />
 
