@@ -6,11 +6,11 @@ export default function Title({ text, subtitle, as }) {
       <Text
         position='relative'
         zIndex={1}
-        fontSize={{ base: '60px', md: '100px' }}
+        fontSize={{ base: '50px', md: '100px' }}
         fontWeight='bold'
         color='#f1f1f1'
         textTransform='uppercase'
-        mb={{ base: '-50px', md: '-75px' }}
+        mb={{ base: '-40px', md: '-75px' }}
       >
         {subtitle}
       </Text>
