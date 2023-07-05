@@ -1,22 +1,26 @@
 import Link from 'next/link';
-import { Flex } from '@chakra-ui/react';
+import { Heading, Box, VStack, LinkBox, LinkOverlay, HStack } from '@chakra-ui/react';
 
 export default function LinkButton(props) {
   const { children } = props;
 
   return (
-    <Link {...props} passHref>
-      <Flex
-        h='50px'
-        w='50px'
-        bg='#f1f1f1'
+    <LinkBox>
+      <LinkOverlay
+        tabIndex={0}
+        display='flex'
         justifyContent='center'
         alignItems='center'
+        minH='50px'
+        minW='50px'
+        bg='#f1f1f1'
         borderRadius='12px'
+        border='1px solid #eee'
+        {...props}
         _hover={{ backgroundColor: '#000', color: '#f1f1f1' }}
       >
         {children}
-      </Flex>
-    </Link>
+      </LinkOverlay>
+    </LinkBox>
   );
 }
