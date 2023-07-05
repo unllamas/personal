@@ -24,9 +24,11 @@ import Hero from '../components/Hero/';
 import Title from '../components/Title';
 import ProjectPreview from '../components/ProjectPreview';
 import ArticlePreview from '../components/ArticlePreview';
+import JobPreview from '../components/JobPreview';
 
 import projects from '../../data/projects.json';
 import articles from '../../data/articles.json';
+import jobs from '../../data/jobs.json';
 
 export default function Home() {
   return (
@@ -38,12 +40,22 @@ export default function Home() {
 
       <Hero />
 
+      {/* Experience */}
+      <Flex mb='100px'>
+        <Container>
+          <Title as='h2' text='Experiencia' subtitle='Experience' />
+          <VStack gap='20px' mt='40px'>
+            {jobs?.length && jobs?.reverse().map((job) => <JobPreview job={job} key={job?.id} />)}
+          </VStack>
+        </Container>
+      </Flex>
+
       {/* Projects */}
       <Box mb='100px'>
         <Container>
           <Title as='h2' text='Proyectos' subtitle='Projects' />
           <SimpleGrid columns={{ base: 1, md: 2 }} gap='20px' mt='40px'>
-            {projects?.map((project) => (
+            {projects?.reverse().map((project) => (
               <ProjectPreview project={project} key={project?.id} />
             ))}
           </SimpleGrid>
