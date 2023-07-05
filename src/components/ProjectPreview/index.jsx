@@ -11,19 +11,19 @@ export default function ProjectPreview({ project }) {
         position='relative'
         overflow='hidden'
         zIndex={1}
-        px='20px'
+        // px='20px'
         bg={background}
         border='1px solid #eee'
         borderRadius='12px'
         transitionDuration='.4s'
         _groupHover={{
-          boxShadow: '0 20px 40px rgba(45, 45, 45, .15)',
+          boxShadow: '0 18px 20px 0px rgba(45, 45, 45, .05)',
           zIndex: 2,
           transform: 'translateY(-10px)',
         }}
       >
-        <HStack position='relative' justifyContent='space-between' alignItems='flex-start' gap='20px' py='20px'>
-          <Box tabIndex={0}>
+        <HStack position='relative' justifyContent='space-between' alignItems='flex-start' gap='20px' p='20px'>
+          <Box>
             <Heading as='h3' fontSize='22px'>
               {title}
             </Heading>
@@ -34,8 +34,7 @@ export default function ProjectPreview({ project }) {
           <LinkOverlay
             href={url?.href}
             target={url?.target}
-            tabIndex={-1}
-            opacity={{ base: 1, md: 0 }}
+            tabIndex={0}
             display='flex'
             justifyContent='center'
             alignItems='center'
@@ -44,12 +43,10 @@ export default function ProjectPreview({ project }) {
             bg='#fff'
             borderRadius='12px'
             border='1px solid #eee'
-            transitionDuration='.4s'
-            _groupHover={{ opacity: 1 }}
           >
             <Arrow />
           </LinkOverlay>
-          <Box position='absolute' top='100%' left='0' ml='0 !important' mt='-10px !important' w='100%'>
+          <Box position='absolute' top='100%' left='20px' ml='0 !important' mt='-10px !important' w='100%'>
             <List
               opacity={{ base: 1, md: 0 }}
               display='flex'

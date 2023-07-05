@@ -24,7 +24,7 @@ export default function ArticlePreview({ article }) {
         />
         <HStack alignItems='flex-start' justifyContent='space-between' px='10px' w='100%' gap='20px'>
           <Heading as='h3' fontSize='22px' _groupHover={{ textDecoration: 'underline' }}>
-            <Link href={url?.href} target={url?.target}>
+            <Link href={url?.href} target={url?.target} tabIndex={-1}>
               {title}
             </Link>
           </Heading>
@@ -33,18 +33,15 @@ export default function ArticlePreview({ article }) {
             <LinkOverlay
               href={url?.href}
               target={url?.target}
-              tabIndex={-1}
-              opacity={{ base: 1, md: 0 }}
-              h='50px'
-              w='50px'
-              borderRadius='12px'
-              border='1px solid #eee'
-              bg='#fff'
+              tabIndex={0}
               display='flex'
               justifyContent='center'
               alignItems='center'
-              transitionDuration='.4s'
-              _groupHover={{ opacity: 1 }}
+              minH='50px'
+              minW='50px'
+              bg='#fff'
+              borderRadius='12px'
+              border='1px solid #eee'
             >
               <Arrow />
             </LinkOverlay>
