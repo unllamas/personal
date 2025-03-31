@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jonathan Llamas</title>
+        <title>Jonathan Llamas | Co-Founder and Product Engineer from Argentina</title>
       </Head>
       <Navbar />
 
