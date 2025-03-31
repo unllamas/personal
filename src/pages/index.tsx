@@ -1,21 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import {
-  Link as ChakraLink,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-  Heading,
-  Text,
-  Box,
-  Flex,
-  VStack,
-  HStack,
-  LinkBox,
-  LinkOverlay,
-  SimpleGrid,
-} from '@chakra-ui/react';
+import { Box, Flex, VStack, SimpleGrid } from '@chakra-ui/react';
 
 import Navbar from '../components/Layout/Navbar';
 import Container from '../components/Layout/Container';
