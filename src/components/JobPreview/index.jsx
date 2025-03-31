@@ -1,74 +1,63 @@
-import { Image, Heading, Text, Box, HStack, LinkOverlay, Stack, VStack } from '@chakra-ui/react';
-
-import Arrow from '../Icons/Arrow';
+import Link from 'next/link';
+import { Heading, Text, Box, HStack, Stack, VStack } from '@chakra-ui/react';
 
 export default function JobPreview({ job }) {
-  const { image, company, date, title, description, url, background } = job;
+  const { company, date, title, description, url } = job;
 
   return (
     <Box
+      overflow='hidden'
       position='relative'
       role='group'
       w='100%'
+      py='6'
+      borderBottom='1px solid #eee'
       transitionDuration='.4s'
-      borderRadius='8px'
-      overflow='hidden'
-      bg='#fafafa'
-      _hover={{
-        background: '#fff',
-        boxShadow: '0 18px 20px 0px rgba(45, 45, 45, .05)',
-        zIndex: 2,
-        transform: 'translateY(-10px)',
-      }}
     >
-      <Box p={{ base: '20px', md: '40px' }} border='1px solid #eee' borderRadius='8px'>
-        <VStack alignItems='start' gap={{ base: '10px', md: '20px' }} key={job?.id}>
+      <Box>
+        <VStack alignItems='start' gap={'12px'} key={job?.id}>
           <HStack justifyContent={'space-between'} alignItems={'flex-start'} w='100%'>
             <HStack alignItems={'flex-start'}>
-              {image?.url && (
-                <Box w='50px' h='50px' borderRadius='4px' overflow='hidden' bg={background} border='1px solid #eee'>
-                  <Image src={`/jobs/${image?.url}.jpeg`} />
-                </Box>
-              )}
               <Box>
-                {job?.title && (
-                  <Heading as='h3' fontSize={{ base: '18px', md: '22px' }}>
-                    {title}
-                  </Heading>
-                )}
-                <Stack flexDirection={{ base: 'column', md: 'row' }} gap={{ base: 0, md: '8px' }}>
-                  {company && <Text>{company}</Text>}
-                  <Text display={{ base: 'none', md: 'block' }} mt={'0 !important'} opacity={0.35}>
-                    -
-                  </Text>
-                  <HStack mt={'0 !important'} opacity={0.65}>
-                    {date?.start && <Text>{date?.start}</Text>}
-                    <Text>/</Text>
-                    <Text>{date?.ending ? date?.ending : 'Presente'}</Text>
-                  </HStack>
+                <Stack flexDir='row' gap='1' fontWeight={500}>
+                  {job?.title && (
+                    <Heading as='h3' fontSize='16px' fontWeight={600}>
+                      {title}
+                    </Heading>
+                  )}
+                  <Text opacity={0.35}>-</Text>
+                  {url?.href ? (
+                    <Link href={url?.href} target={url?.target}>
+                      <Heading
+                        as='h4'
+                        fontSize='16px'
+                        fontWeight={400}
+                        textUnderlineOffset={4}
+                        textDecoration='underline'
+                        textDecorationColor='gray.300'
+                      >
+                        {company}
+                      </Heading>
+                    </Link>
+                  ) : (
+                    <Heading as='h4' fontSize='16px' fontWeight={400}>
+                      {company}
+                    </Heading>
+                  )}
                 </Stack>
+                <HStack gap='1' opacity={0.85} fontSize='14px'>
+                  {date?.start && <Text>{date?.start}</Text>}
+                  <Text>/</Text>
+                  <Text>{date?.ending ? date?.ending : 'Presente'}</Text>
+                </HStack>
               </Box>
             </HStack>
-
-            {url?.href && (
-              <LinkOverlay
-                href={url?.href}
-                target={url?.target}
-                tabIndex={0}
-                display='flex'
-                justifyContent='center'
-                alignItems='center'
-                minH='50px'
-                minW='50px'
-                bg='#fff'
-                borderRadius='12px'
-                border='1px solid #eee'
-              >
-                <Arrow />
-              </LinkOverlay>
-            )}
           </HStack>
-          {description && <Text>{description}</Text>}
+          {description && (
+            <Text fontSize={'14px'} opacity={0.85}>
+              {description}
+            </Text>
+          )}
         </VStack>
       </Box>
     </Box>
