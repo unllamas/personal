@@ -2,19 +2,17 @@ import { Heading, Box, Text } from '@chakra-ui/react';
 
 export default function Title({ text, subtitle, as }) {
   return (
-    <Box>
+    <Box position='relative' width={'100%'}>
       <Text
-        position='relative'
         zIndex={1}
-        fontSize={{ base: '50px', md: '100px' }}
+        fontSize={{ base: '42px', md: '64px' }}
         fontWeight='bold'
         color='#f1f1f1'
         textTransform='uppercase'
-        mb={{ base: '-40px', md: '-75px' }}
       >
         {subtitle}
       </Text>
-      <Heading as={as} position='relative' zIndex={2}>
+      <Heading as={as} position='absolute' bottom={{ base: '8px', md: '18px' }} zIndex={2} fontSize={'22px'}>
         {text}
       </Heading>
     </Box>
