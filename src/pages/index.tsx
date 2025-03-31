@@ -44,7 +44,7 @@ export default function Home() {
       <Flex mb='100px'>
         <Container>
           <Title as='h2' text='Experiencia' subtitle='Experience' />
-          <VStack gap='20px' mt='40px'>
+          <VStack gap='0' mt='4'>
             {jobs?.length && jobs?.reverse().map((job) => <JobPreview job={job} key={job?.id} />)}
           </VStack>
         </Container>
@@ -54,11 +54,11 @@ export default function Home() {
       <Box mb='100px'>
         <Container>
           <Title as='h2' text='Proyectos' subtitle='Projects' />
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap='20px' mt='40px'>
-            {projects?.reverse().map((project) => (
+          <VStack w='100' gap='4' mt='4'>
+            {projects?.map((project) => (
               <ProjectPreview project={project} key={project?.id} />
             ))}
-          </SimpleGrid>
+          </VStack>
         </Container>
       </Box>
 
@@ -66,7 +66,7 @@ export default function Home() {
       <Flex mb='100px'>
         <Container>
           <Title as='h2' text='Artículos' subtitle='Articles' />
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap='20px' mt='40px'>
+          <SimpleGrid columns={{ base: 1, md: 2 }} gap='8' mt='4'>
             {articles?.map((article) => (
               <ArticlePreview article={article} key={article?.id} />
             ))}

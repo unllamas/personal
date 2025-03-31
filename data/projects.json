@@ -1,97 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Mariano Flores",
-    "description": "Sitio web para estudio de arquitectura",
-    "tags": [
-      "Diseño",
-      "Desarrollo",
-      "Wordpress"
-    ],
-    "background": "#fff",
+    "title": "Llamout",
+    "description": "La plataforma de pago de código abierto.",
+    "status": "active",
     "url": {
       "target": "_blank",
-      "href": "https://mfaarq.es/"
-    },
-    "image": {
-      "url": "mariano.png",
-      "size": "cover"
+      "href": "https://github.com/llamout/llamout"
     }
   },
   {
     "id": 2,
-    "title": "MozzoTattoo",
-    "description": "Sitio web para artista del tatuaje",
-    "tags": [
-      "Diseño",
-      "Desarrollo",
-      "GSAP"
-    ],
-    "background": "#fff",
+    "title": "BurroSpeech",
+    "description": "Proyecto de hackaton y ganador del 2do puesto: Traducción en vivo con IA para eventos, reuniones y talleres.",
+    "status": "disabled",
     "url": {
       "target": "_blank",
-      "href": "https://mozzotattoo.com/"
-    },
-    "image": {
-      "url": "mozzo.png",
-      "size": "contain"
+      "href": "https://github.com/418labs/burro-speech"
     }
   },
   {
     "id": 3,
-    "title": "Upload image",
-    "description": "dApp para subir y compartir imagenes",
-    "tags": [
-      "Desarrollo",
-      "NextJS",
-      "IPFS"
-    ],
-    "background": "#fff",
+    "title": "Zapcito",
+    "description": "Un kit de inicio para crear clientes Nostr con pago Lightning.",
+    "status": "disabled",
     "url": {
       "target": "_blank",
-      "href": "https://simple-image-upload-ipfs.vercel.app/"
-    },
-    "image": {
-      "url": "upload.png",
-      "size": "cover"
+      "href": "https://github.com/unllamas/zapcito"
     }
   },
   {
     "id": 4,
-    "title": "Sallet.app",
-    "description": "Wallet non-custodial para ETH",
-    "tags": [
-      "Desarrollo",
-      "NextJS",
-      "EthersJS"
-    ],
-    "background": "#9FDBA5",
+    "title": "Eventro",
+    "description": "Una plataforma descentralizada de descubrimiento de eventos construida sobre Nostr.",
+    "status": "disabled",
     "url": {
       "target": "_blank",
-      "href": "http://sallet.app/"
-    },
-    "image": {
-      "url": "sallet.png",
-      "size": "cover"
-    }
-  },
-  {
-    "id": 5,
-    "title": "SimpleWallet UI",
-    "description": "UI Kit para Sallet",
-    "tags": [
-      "Diseño",
-      "Figma",
-      "UI Kit"
-    ],
-    "background": "#eee",
-    "url": {
-      "target": "_blank",
-      "href": "https://www.figma.com/file/1i0831yLWD4XJmjo9iEXvR/Simple-wallet"
-    },
-    "image": {
-      "url": "sallet-ui.png",
-      "size": "cover"
+      "href": "https://github.com/unllamas/eventro_old"
     }
   }
 ]

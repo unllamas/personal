@@ -1,9 +1,6 @@
 [
   {
     "id": 1,
-    "image": {
-      "url": "gestioo"
-    },
     "company": "Gestioo.com",
     "date": {
       "start": "2017",
@@ -11,7 +8,6 @@
     },
     "title": "Web Developer",
     "description": "Pasé de Diseñador Web freelance a Desarrollador Web aprendiendo las practicas de la empresa. Llegue a crear, modificar y testear módulos internos, como asistir en el rediseño de la nueva plataforma, diseño de aplicaciones móviles y sitios web para clientes.",
-    "background": "#1475BA",
     "url": {
       "target": "_blank",
       "href": "https://gestioo.com/"
@@ -19,9 +15,6 @@
   },
   {
     "id": 2,
-    "image": {
-      "url": "unthom"
-    },
     "company": "Unthom",
     "date": {
       "start": "2019",
@@ -29,7 +22,6 @@
     },
     "title": "Web Designer",
     "description": "Marca personal donde ayudamos a pequeños emprendimientos a tener su primera presencia online. Desde el diseño y maquetado, hasta el desarrollo y el SEO.",
-    "background": "#000000",
     "url": {
       "target": "_blank",
       "href": ""
@@ -37,9 +29,6 @@
   },
   {
     "id": 3,
-    "image": {
-      "url": "reyesoft"
-    },
     "company": "Reyesoft",
     "date": {
       "start": "2020",
@@ -47,7 +36,6 @@
     },
     "title": "Front-End Developer",
     "description": "Corrección de errores generales y propuestas de diseño para Saldo",
-    "background": "#fff",
     "url": {
       "target": "_blank",
       "href": "https://reyesoft.com/"
@@ -55,9 +43,6 @@
   },
   {
     "id": 4,
-    "image": {
-      "url": "ayerviernes"
-    },
     "company": "AyerViernes",
     "date": {
       "start": "2021",
@@ -65,7 +50,6 @@
     },
     "title": "Front-End Developer",
     "description": "Desarrollo de landings page desde Figma. Mantenimiento general en Front-End. Aprendizaje de los 2 primeros niveles de certificacion UX: Adopción y Ejecución.",
-    "background": "#34669B",
     "url": {
       "target": "_blank",
       "href": "https://www.ayerviernes.com/"
@@ -73,9 +57,6 @@
   },
   {
     "id": 5,
-    "image": {
-      "url": "aerolab"
-    },
     "company": "Aerolab",
     "date": {
       "start": "2021",
@@ -83,7 +64,6 @@
     },
     "title": "UI Developer",
     "description": "Gran proceso de aprendizaje con varios frameworks, librerías y tecnologías. En el transcurso me forme profesionalmente hacia el ecosistema web3/crypto, como también haber dado mi primera charla sobre esto frente a todo el equipo de desarrollo. Gracias a tener presente los valores de la empresa pude profundizar en el concepto de localfirst u offline first, donde el eje central pasa por y para el usuario como primera instancia y no sobre el beneficio del mismo.",
-    "background": "#FFFFFF",
     "url": {
       "target": "_blank",
       "href": "https://aerolab.co/"
@@ -91,9 +71,6 @@
   },
   {
     "id": 6,
-    "image": {
-      "url": "paxo"
-    },
     "company": "Paxo.co",
     "date": {
       "start": "2022",
@@ -101,7 +78,6 @@
     },
     "title": "Software Developer",
     "description": "Documentación y colaboración en decisiones de diseño como del UI Kit interno. Mantenimiento del codigo legacy, como también la optimizacion de un 10% en su CSS.",
-    "background": "",
     "url": {
       "target": "_blank",
       "href": "https://paxo.co/"
@@ -109,20 +85,44 @@
   },
   {
     "id": 7,
-    "image": {
-      "url": "streamdungeons"
-    },
     "company": "StreamDungeons",
-    "title": "UX Engineer",
+    "title": "Co-Founder Engineer",
     "description": "Diseño, planificacion, desarrollo y documentacion tanto del UI Kit como de la plataforma de DarkyClans. Se lograron lanzar 2 betas de forma exitosa con al rededor de 200 usuarios y un tiempo promedio de 16/20min de uso diario.",
     "date": {
       "start": "2023",
-      "ending": ""
+      "ending": "2023"
     },
-    "background": "#212121",
     "url": {
       "target": "_blank",
       "href": "https://nft.streamdungeons.com/"
+    }
+  },
+  {
+    "id": 8,
+    "company": "La Crypta",
+    "title": "Product Engineer",
+    "description": "En proceso 🚧",
+    "date": {
+      "start": "2024",
+      "ending": ""
+    },
+    "url": {
+      "target": "_blank",
+      "href": "https://lacrypta.ar/"
+    }
+  },
+  {
+    "id": 9,
+    "company": "LaWallet",
+    "title": "Co-Founder Engineer",
+    "description": "Logramos investigar, diseñar y desarrollar múltiples productos para construir un ecosistema alrededor de nuestras herramientas, con tecnologias como React, Next, Nostr y Lightning.",
+    "date": {
+      "start": "2024",
+      "ending": ""
+    },
+    "url": {
+      "target": "_blank",
+      "href": "https://lawallet.io/"
     }
   }
 ]
