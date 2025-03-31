@@ -1,87 +1,41 @@
-import { Heading, Text, Box, HStack, LinkBox, LinkOverlay, List, ListItem, VStack } from '@chakra-ui/react';
-
-import Arrow from '../Icons/Arrow';
+import Link from 'next/link';
+import { Heading, Text, VStack, Stack, HStack, Box } from '@chakra-ui/react';
 
 export default function ProjectPreview({ project }) {
-  const { background, title, description, tags, url, image } = project;
+  const { title, description, url, status } = project;
 
   return (
-    <LinkBox position='relative' role='group'>
-      <Box
-        position='relative'
-        overflow='hidden'
-        zIndex={1}
-        // px='20px'
-        bg={background}
-        border='1px solid #eee'
-        borderRadius='12px'
-        transitionDuration='.4s'
-        _groupHover={{
-          boxShadow: '0 18px 20px 0px rgba(45, 45, 45, .05)',
-          zIndex: 2,
-          transform: 'translateY(-10px)',
-        }}
-      >
-        <HStack position='relative' justifyContent='space-between' alignItems='flex-start' gap='20px' p='20px'>
-          <Box>
-            <Heading as='h3' fontSize='22px'>
-              {title}
-            </Heading>
-            <Text fontSize='16px' opacity='.65'>
-              {description}
-            </Text>
-          </Box>
-          <LinkOverlay
-            href={url?.href}
-            target={url?.target}
-            tabIndex={0}
-            display='flex'
-            justifyContent='center'
-            alignItems='center'
-            minH='50px'
-            minW='50px'
-            bg='#fff'
-            borderRadius='12px'
-            border='1px solid #eee'
-          >
-            <Arrow />
-          </LinkOverlay>
-          <Box position='absolute' top='100%' left='20px' ml='0 !important' mt='-10px !important' w='100%'>
-            <List
-              opacity={{ base: 1, md: 0 }}
-              display='flex'
-              gap='4px'
-              m='0'
-              transitionDuration='.4s'
-              _groupHover={{ opacity: 1 }}
-            >
-              {tags?.map((tag, key) => (
-                <ListItem
-                  key={key}
-                  p='2px 8px'
-                  bg='rgba(51,51,51,.65)'
-                  backdropFilter='auto'
-                  backdropBlur='10px'
-                  borderRadius='12px'
-                  color='#f1f1f1'
-                  whiteSpace='nowrap'
-                >
-                  {tag}
-                </ListItem>
-              ))}
-            </List>
-          </Box>
+    <VStack gap='2' alignItems={'start'} w={'100%'} borderBottom={'1px solid #eee'} py='6'>
+      <Stack flexDir='row' alignItems={'center'} justifyContent={'center'} gap='1' fontWeight={500}>
+        <HStack alignItems={'center'} justifyContent={'center'}>
+          <Box w='10px' h='10px' borderRadius='full' bg={status === 'active' ? 'green.500' : 'gray.200'} />
+          <Heading as='h3' fontSize='16px' fontWeight={600}>
+            {title}
+          </Heading>
         </HStack>
-        <Box
-          w='100%'
-          h='100%'
-          minH='300px'
-          backgroundImage={`url(/projects/${image.url})`}
-          backgroundPosition='center'
-          backgroundSize={image.size}
-          backgroundRepeat='no-repeat'
-        />
-      </Box>
-    </LinkBox>
+        <Text opacity={0.35}>-</Text>
+        {url?.href ? (
+          <Link href={url?.href} target={url?.target}>
+            <Heading
+              as='h4'
+              fontSize='16px'
+              fontWeight={400}
+              textUnderlineOffset={4}
+              textDecoration='underline'
+              textDecorationColor='gray.300'
+            >
+              Github
+            </Heading>
+          </Link>
+        ) : (
+          <Heading as='h4' fontSize='16px' fontWeight={400}>
+            {company}
+          </Heading>
+        )}
+      </Stack>
+      <Text fontSize='14px' opacity='.85'>
+        {description}
+      </Text>
+    </VStack>
   );
 }
