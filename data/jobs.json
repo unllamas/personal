@@ -18,7 +18,7 @@
     "company": "Unthom",
     "date": {
       "start": "2019",
-      "ending": "2021"
+      "ending": "Freelance"
     },
     "title": "Web Designer",
     "description": "Marca personal donde ayudamos a pequeños emprendimientos a tener su primera presencia online. Desde el diseño y maquetado, hasta el desarrollo y el SEO.",
@@ -123,6 +123,20 @@
     "url": {
       "target": "_blank",
       "href": "https://lawallet.io/"
+    }
+  },
+  {
+    "id": 10,
+    "company": "Aqua Wallet",
+    "title": "UI Designer",
+    "description": "Investigacion, diseño de experiencia y planificación del nuevo producto estrella: Tarjeta de Debito. Comunicación constante con el equipo de desarrollo y analisis de viabilidad.",
+    "date": {
+      "start": "2025",
+      "ending": "Freelance"
+    },
+    "url": {
+      "target": "_blank",
+      "href": "https://aquawallet.io/"
     }
   }
 ]
