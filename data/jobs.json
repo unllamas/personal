@@ -21,7 +21,7 @@
       "ending": "Freelance"
     },
     "title": "Web Designer",
-    "description": "Marca personal donde ayudamos a pequeños emprendimientos a tener su primera presencia online. Desde el diseño y maquetado, hasta el desarrollo y el SEO.",
+    "description": "Marca personal donde ayudamos a pequeños emprendimientos a tener su primera presencia online, desde el diseño y maquetado, hasta el desarrollo y el SEO. Gracias a esto uno de nuestros clientes pudo lograr un beneficio del 650% con respecto a lo invertido.",
     "url": {
       "target": "_blank",
       "href": ""
@@ -87,7 +87,7 @@
     "id": 7,
     "company": "StreamDungeons",
     "title": "Co-Founder Engineer",
-    "description": "Diseño, planificacion, desarrollo y documentacion tanto del UI Kit como de la plataforma de DarkyClans, un juego MMORPG de navegador. Se lograron lanzar 2 betas de forma exitosa con al rededor de 200 usuarios y un tiempo promedio de 16/20min de uso diario.",
+    "description": "Diseño, planificacion, desarrollo y documentacion tanto del UI Kit como de la plataforma de DarkyClans, un juego MMORPG de navegador. Se lograron lanzar 2 betas de forma exitosa con al rededor de 200 usuarios y un tiempo promedio de 16/20min de uso diario. Además, se planteó un cambio de estrategia de ventas que pasó de recaudar -$100 USD, a +6.000 USD en 2 meses.",
     "date": {
       "start": "2023",
       "ending": "2023"
@@ -115,7 +115,7 @@
     "id": 9,
     "company": "LaWallet",
     "title": "Co-Founder Engineer",
-    "description": "Logramos investigar, diseñar y desarrollar múltiples productos para construir un ecosistema alrededor de nuestras herramientas, con tecnologias como React, Next, Nostr y Lightning.",
+    "description": "Logramos investigar, diseñar y desarrollar múltiples productos para construir un ecosistema alrededor de nuestras herramientas, con tecnologias como React, Next, Nostr y Lightning. Desde el onboarding de nuestra billetera Bitcoin en menos de 30 segundos, hasta la venta de +5.000 productos con nuestros PoS.",
     "date": {
       "start": "2024",
       "ending": ""
@@ -129,7 +129,7 @@
     "id": 10,
     "company": "Aqua Wallet",
     "title": "UI Designer",
-    "description": "Investigacion, diseño de experiencia y planificación del nuevo producto estrella: Tarjeta de Debito. Comunicación constante con el equipo de desarrollo y analisis de viabilidad.",
+    "description": "Investigacion, diseño de experiencia y planificación del nuevo producto estrella: Tarjeta de Debito sin KYC. Comunicación constante con el equipo de desarrollo y analisis de viabilidad.",
     "date": {
       "start": "2025",
       "ending": "Freelance"
