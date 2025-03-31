@@ -37,7 +37,7 @@ export default function Home() {
       {/* Projects */}
       <Box mb='100px'>
         <Container>
-          <Title as='h2' text='Proyectos' subtitle='Projects' />
+          <Title as='h2' text='Proyectos' subtitle='Open-Source' />
           <VStack w='100' gap='4' mt='4'>
             {projects?.map((project) => (
               <ProjectPreview project={project} key={project?.id} />
