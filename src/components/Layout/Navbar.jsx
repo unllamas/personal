@@ -1,8 +1,12 @@
-import { Flex } from '@chakra-ui/react';
+import Link from 'next/link';
+import { Flex, HStack, Button } from '@chakra-ui/react';
 
 import Container from './Container';
 
 import Logo from '../UI/Logo';
+import Linkedin from '../Icons/Linkedin';
+import Twitter from '../Icons/Twitter';
+import Github from '../Icons/Github';
 
 export default function Navbar() {
   return (
@@ -17,7 +21,26 @@ export default function Navbar() {
       backdropBlur='10px'
     >
       <Container>
-        <Logo />
+        <HStack w={'100%'} justifyContent='space-between'>
+          <Logo />
+          <HStack>
+            <Link href='https://www.linkedin.com/in/unllamas/' target='_blank'>
+              <Button size='sm' colorScheme='gray' variant='ghost'>
+                <Linkedin />
+              </Button>
+            </Link>
+            <Link href='https://twitter.com/unllamas' target='_blank'>
+              <Button size='sm' colorScheme='gray' variant='ghost'>
+                <Twitter />
+              </Button>
+            </Link>
+            <Link href='https://github.com/unllamas' target='_blank'>
+              <Button size='sm' colorScheme='gray' variant='ghost'>
+                <Github />
+              </Button>
+            </Link>
+          </HStack>
+        </HStack>
       </Container>
     </Flex>
   );
