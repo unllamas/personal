@@ -19,7 +19,7 @@ export default function Hero() {
           </VStack>
 
           <Stack alignItems={'center'} justifyContent={'center'} mt='40px'>
-            <HStack position='relative' display='inline-flex' mt='10px' boxShadow={'lg'}>
+            <HStack position='relative' display='inline-flex' mt='10px' boxShadow={'lg'} borderRadius={'7px'}>
               <Link href='https://calendly.com/unllamas' target='_blank'>
                 <Button flexDirection={'row'} colorScheme='green' gap='2' boxShadow={'2xl'}>
                   Conectemos ahora
