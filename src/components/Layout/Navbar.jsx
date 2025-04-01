@@ -19,6 +19,7 @@ export default function Navbar() {
       bg='rgba(255,255,255,.65)'
       backdropFilter='auto'
       backdropBlur='10px'
+      boxShadow={'xs'}
     >
       <Container>
         <HStack w={'100%'} justifyContent='space-between'>
