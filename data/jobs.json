@@ -85,16 +85,16 @@
   },
   {
     "id": 7,
-    "company": "StreamDungeons",
+    "company": "DarkyClans",
     "title": "Co-Founder Engineer",
-    "description": "Diseño, planificacion, desarrollo y documentacion tanto del UI Kit como de la plataforma de DarkyClans, un juego MMORPG de navegador. Se lograron lanzar 2 betas de forma exitosa con al rededor de 200 usuarios y un tiempo promedio de 16/20min de uso diario. Además, se planteó un cambio de estrategia de ventas que pasó de recaudar -$100 USD, a +6.000 USD en 2 meses.",
+    "description": "Juego MMORPG de navegador donde se realizo diseño, planificacion, desarrollo y documentacion. Se lograron lanzar 2 betas de forma exitosa con al rededor de 200 usuarios y un tiempo promedio de 16/20min de uso diario. Además, se planteó un cambio de estrategia de ventas que pasó de recaudar -$100 USD, a +6.000 USD en 2 meses.",
     "date": {
       "start": "2023",
       "ending": "2023"
     },
     "url": {
       "target": "_blank",
-      "href": "https://nft.streamdungeons.com/"
+      "href": ""
     }
   },
   {
@@ -129,7 +129,7 @@
     "id": 10,
     "company": "Aqua Wallet",
     "title": "UI Designer",
-    "description": "Investigacion, diseño de experiencia y planificación del nuevo producto estrella: Tarjeta de Debito sin KYC. Comunicación constante con el equipo de desarrollo y analisis de viabilidad.",
+    "description": "Investigacion, diseño de experiencia y planificación del nuevo producto estrella: Tarjeta de Debito. Comunicación constante con el equipo de desarrollo y analisis de viabilidad.",
     "date": {
       "start": "2024",
       "ending": "Freelance"
